@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio</title>
+
+    <!--Linking Bootstrap-->
+    <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
+    <!--Linking CSS-->
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="portfolio-header">
+        <div class="row">
+          <div class="col-md-3 col-sm-3">
+              <img src="{{url_for('static', filename = 'logo.png')}}" alt="Udacity_Logo" class="logo">
+          </div>
+          <div class="col-md-9 col-sm-9">
+            <h1 class="portfolio-header-text">SINDHU SHANKAR</h1>
+            <h3 class="portfolio-header-text">SOFTWARE DEVELOPER</h3>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="container portfolio-image">
+      <div class="row">
+        <div class="col">
+          <img class="img-thumbnail" src="{{url_for('static', filename = 'portfolio.jpg')}}" alt="portfolio-image">
+          <span class="portfolio-tagline">Software developer, singer, music, art, food and travel enthusiast.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="heading">Featured Work</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 projects">
+          <img src="{{url_for('static', filename = 'movies.jpg')}}" alt="entertainment_centre" class="thumbnail project-image center-block">
+          <p class="project-title">Entertainment Centre</p>
+          <a href="https://github.com/sbpf/Python-Samples/blob/master/TrailerWebsite.zip"><p class="github-link">Source-Code</p></a>
+        </div>
+
+        <div class="col-md-4 projects">
+          <img src="{{url_for('static', filename = 'secret_message.jpg')}}" alt="secret_message" class="thumbnail project-image center-block">
+          <p class="project-title">Secret Message</p>
+          <a href="https://github.com/sbpf/Python-Samples/blob/master/renameFiles.py"><p class="github-link">Source-Code</p></a>
+        </div>
+
+        <div class="col-md-4 projects">
+          <img src="{{url_for('static', filename = 'take_a_break.jpg')}}" alt="take_a_break" class="thumbnail project-image center-block">
+          <p class="project-title">Take a Break</p>
+          <a href="https://github.com/sbpf/Python-Samples/blob/master/take_a_break.py">
+            <p class="github-link">Source-Code</p>
+          </a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

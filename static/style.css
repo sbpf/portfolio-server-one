@@ -1,0 +1,89 @@
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portfolio-header {
+  border-bottom: 5px solid #4a4545;
+  margin-bottom: 2%;
+}
+
+.portfolio-header-text {
+  text-align:right;
+  color:#4a4545;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin-right: 2%;
+}
+
+.portfolio-tagline {
+  padding: 2%;
+  color:#4a4545;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+.portfolio-image {
+  margin: auto;
+}
+
+.heading {
+  padding-left: 2%;
+  padding-top: 3%;
+  color:#4a4545;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.project-title {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color:#4a4545;  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 250px;
+}
+
+.github-link {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+/*media query*/
+@media screen and (max-width: 767px) {
+  .logo{
+    float:left;
+    max-width: 25%;
+    max-height: 25%;
+    padding-top: 6%;
+  }
+
+  .portfolio-header {
+    border-bottom: 4px solid grey;
+  }
+
+  h1 {
+    font-size: x-large;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .heading {
+    font-size: large;
+  }
+
+  .portfolio-tagline {
+    font-size: large;
+  }
+}
